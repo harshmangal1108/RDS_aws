@@ -1,0 +1,16 @@
+# TO START RDS IN OUR INSTANCE
+mysql -u root -h hostname -p
+
+ # THIS WILL PUSH A DATABSE FROM A URL
+wget https://raw.githubusercontent.com/redashu/dbconnect/master/mysqldump/myfile.sql
+
+# TO IMPORT OR MIGRATE DATA FROM A SYSTEM TO RDS
+ mysql -u root -h hostname -p databasename <filename.sql
+# root -- is the user created at RDS at AWS
+# -h -- host
+# -p -- ask for password
+
+
+#TO INTREGTAE DATABASE WITH PYTHON
+--> install the following module
+pip3 install mysql-connector-python
